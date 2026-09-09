@@ -4,7 +4,7 @@
 ## :notebook_with_decorative_cover: Personal Information
 - Name: 陳祥寧 (CHEN,HSIANG-NING)
 - Number: M11502284
-- Research Direction: integrated sensing and communication
+- Research Direction: O-RAN
 - Briefly summarize your background and why you want to take this course:
 
 My research focuses on 5G communication protocols. I am taking this course to deepen my understanding of advanced wireless communication principles and enhance my expertise in protocol design, aiming to strengthen my technical foundation for my ongoing research.

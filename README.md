@@ -26,5 +26,5 @@ My research focuses on 5G networks and O-RAN. I am taking this course to deepen 
     -  **Deadline : 12:00, Oct. 5**
     - Goal:
 In this lab,you will compare three 5-second UDP iperf3 tests. You will learn how TDD slot allocation can affect downlink and uplink performance.
-    - - delivery: **put your file link here**.
+    - - delivery: [陳祥寧 Lab2](https://github.com/JackChen1517/WC-2026-M11502284-Jack/blob/main/lab2/lab2_report.md)
     -  [ ] Peer review : [Vote the Top3](https://docs.google.com/forms/d/e/1FAIpQLScz-Kt_9ArkXOl8sG99549xqGK7W7vAqoY4lbbc3ph03zvFaw/viewform?usp=publish-editor) (DL: 23:59, Oct.7)

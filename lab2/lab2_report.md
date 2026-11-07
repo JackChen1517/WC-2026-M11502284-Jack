@@ -75,6 +75,20 @@ scenario-b-uplink.json     "protocol": "UDP",   "reverse": 0   → Uplink
 scenario-c-uplink.json     "protocol": "UDP",   "reverse": 0   → Uplink
 ```
 
+Screenshots of `start → test_start` in each JSON file:
+
+Scenario A (`scenario-a-downlink.json`):
+
+![reverse value in the Scenario A JSON](images/task1-reverse-a.png)
+
+Scenario B (`scenario-b-uplink.json`):
+
+![reverse value in the Scenario B JSON](images/task1-reverse-b.png)
+
+Scenario C (`scenario-c-uplink.json`):
+
+![reverse value in the Scenario C JSON](images/task1-reverse-c.png)
+
 ## 4. Task 2 — Compare Throughput
 
 In each JSON file, find:
@@ -544,6 +558,8 @@ Select one packet from the iperf3 TCP control connection and record its ACK RTT:
 
 Packet 1842 is the final ACK of the TCP handshake on the iperf3 control connection (10.0.0.6:55141 to 192.168.70.135:5201). It acknowledges the SYN-ACK in packet 1833.
 
+![TCP ACK RTT of packet 1842 in Scenario A](images/task8-ack-rtt.png)
+
 This value is the RTT of the TCP control connection. It is not the RTT of the UDP data packets.
 
 ### Packet Interval
@@ -565,6 +581,8 @@ Record the scenario, display filter, packet numbers, and time interval.
 | A | `gtp && ip.src==192.168.70.135 && ip.dst==10.0.0.6 && udp.srcport==5201 && udp.dstport==51624 && frame.len==1540` | 1898 → 1900 | 81 µs (0.000081 s) |
 
 Packets 1898 and 1900 are consecutive iperf3 datagrams (`[3]` and `[4]`) with different IP IDs (inner 0x8ea3 and 0x8ea4), so they are distinct data packets. The filter returns 41,765 packets with no repeated IP ID, which matches the 41,765 packets in `scenario-a-downlink.json`. This confirms that it selects one observation of each data packet. The filter excludes the separate IP-fragment observations of the same data (for example, packet 1897), which do not decode as GTP.
+
+![Time delta from previous displayed frame for packet 1900 in Scenario A](images/task8-packet-interval.png)
 
 **Note:** The time interval depends on the applied display filter. Make sure the selected packets are distinct data packets, not duplicated observations from different capture points. Do not use their interval to infer the TDD slot pattern.
 

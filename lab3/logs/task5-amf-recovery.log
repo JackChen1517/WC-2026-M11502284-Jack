@@ -1,0 +1,21 @@
+[2026-11-11 03:50:49.337] [amf_n1] [info] 5GMM state transition: 5GMM-DEREGISTERED -> COMM-PROC-INIT (event: [REGISTRATION_REQUEST_RECEIVED])
+[2026-11-11 03:50:49.337] [amf_sbi] [info] Send HTTP message to http://oai-ausf:8080/nausf-auth/v1/ue-authentications
+[2026-11-11 03:50:49.337] [amf_sbi] [info] HTTP message Body: {"servingNetworkName":"5G:mnc001.mcc001.3gppnetwork.org","supiOrSuci":"imsi-001010000000001"}
+[2026-11-11 03:50:49.512] [amf_sbi] [info] Get response with HTTP code (201)
+[2026-11-11 03:50:49.513] [amf_n1] [debug] Got UE Authentication from AUSF: {"5gAuthData":{"autn":"b35d81133cee8000a375e4539d66d9d5","hxresStar":"e5df2c174c656ec70baed1b39563c957","rand":"ec7aa51372788423f7ebf982679efb81"},"_links":{"5g-aka":{"href":"http://192.168.70.138:8080/nausf-auth/v1/ue-authentications/b35d81133cee8000a375e4539d66d9d5/5g-aka-confirmation"}},"authType":"5G_AKA"}
+[2026-11-11 03:50:49.514] [amf_n1] [info] Links is: http://192.168.70.138:8080/nausf-auth/v1/ue-authentications/b35d81133cee8000a375e4539d66d9d5/5g-aka-confirmation
+[2026-11-11 03:50:49.514] [amf_n1] [info] 5GMM state transition: COMM-PROC-INIT -> COMM-PROC-INIT (event: [AUTHENTICATION_REQUEST_SENT])
+[2026-11-11 03:50:49.559] [amf_n1] [info] 5GMM state transition: COMM-PROC-INIT -> COMM-PROC-INIT (event: [AUTHENTICATION_RESPONSE_RECEIVED])
+[2026-11-11 03:50:49.560] [amf_sbi] [info] Send HTTP message to http://192.168.70.138:8080/nausf-auth/v1/ue-authentications/b35d81133cee8000a375e4539d66d9d5/5g-aka-confirmation
+[2026-11-11 03:50:49.625] [amf_n1] [info] 5GMM state transition: COMM-PROC-INIT -> COMM-PROC-INIT (event: [SECURITY_MODE_COMMAND_SENT])
+[2026-11-11 03:50:49.654] [amf_n1] [info] 5GMM state transition: COMM-PROC-INIT -> COMM-PROC-INIT (event: [SECURITY_MODE_COMPLETE_RECEIVED])
+[2026-11-11 03:50:49.682] [amf_n1] [info] 5GMM state transition: COMM-PROC-INIT -> COMM-PROC-INIT (event: [REGISTRATION_ACCEPT_SENT_WITH_T3550])
+[2026-11-11 03:50:49.786] [amf_n1] [info] 5GMM state transition: COMM-PROC-INIT -> 5GMM-REGISTERED (event: [REGISTRATION_COMPLETE_RECEIVED])
+[2026-11-11 03:50:49.796] [amf_sbi] [debug] Handle PDU Session Establishment Request (SUPI imsi-001010000000001, PDU Session ID 10)
+
+   |-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |---------------------------------------------------------------------UEs' Information----------------------------------------------------------------------|
+   |  Index |     5GMM State     |                IMSI/SUPI               |        GUTI        |   RAN UE NGAP ID   |   AMF UE NGAP ID   |        PLMN        |       Cell Id      |
+   |    1   |   5GMM-REGISTERED  |             001010000000001            |00101010041345523618|        0x04        |        0x05        |       001,01       |      0000e014e     |
+   |    2   |  5GMM-DEREGISTERED |             001010000000099            |                    |        0x03        |        0x04        |       001,01       |      0000e014e     |
+   |-----------------------------------------------------------------------------------------------------------------------------------------------------------|

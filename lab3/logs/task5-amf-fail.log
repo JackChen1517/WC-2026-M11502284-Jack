@@ -1,0 +1,39 @@
+[2026-11-11 03:34:14.715] [amf_n1] [debug] Start to run Registration Procedure
+[2026-11-11 03:34:14.715] [amf_n1] [warning] 5GMM state transition: valid,  from state=5GMM-DEREGISTERED, event=REGISTRATION_REQUEST_RECEIVED, to state=COMM-PROC-INIT
+[2026-11-11 03:34:14.715] [amf_app] [debug] The UE's state (IMSI 001010000000099, State COMM-PROC-INIT) has been successfully updated!
+[2026-11-11 03:34:14.715] [amf_n1] [info] 5GMM state transition: 5GMM-DEREGISTERED -> COMM-PROC-INIT (event: [REGISTRATION_REQUEST_RECEIVED])
+[2026-11-11 03:34:14.715] [amf_n1] [debug] SUCI SUPI format IMSI is available
+[2026-11-11 03:34:14.715] [amf_n1] [debug] Authentication vector in nas_context is not available
+[2026-11-11 03:34:14.715] [amf_n1] [debug] Start to generate Authentication Vectors
+[2026-11-11 03:34:14.715] [amf_n1] [debug] Get Authentication Vectors from AUSF
+[2026-11-11 03:34:14.715] [amf_n1] [debug] Promise ID generated 7
+[2026-11-11 03:34:14.715] [amf_sbi] [info] Receive UE Authentication Request message, handling ...
+[2026-11-11 03:34:14.716] [amf_sbi] [debug] Send UE Authentication Request to AUSF 
+[2026-11-11 03:34:14.716] [amf_sbi] [info] Send HTTP message to http://oai-ausf:8080/nausf-auth/v1/ue-authentications
+[2026-11-11 03:34:14.716] [amf_sbi] [info] HTTP message Body: {"servingNetworkName":"5G:mnc001.mcc001.3gppnetwork.org","supiOrSuci":"imsi-001010000000099"}
+[2026-11-11 03:34:14.716] [amf_sbi] [debug] Send a simple HTTP request
+[2026-11-11 03:34:14.752] [amf_sbi] [info] Get response with HTTP code (404)
+[2026-11-11 03:34:14.752] [amf_app] [debug] Trigger process response: Set promise with ID 7 to ready
+[2026-11-11 03:34:14.752] [amf_n1] [debug] Got result for promise ID 7
+[2026-11-11 03:34:14.753] [amf_n1] [debug] Got UE Authentication from AUSF: {"cause":"CONTEXT_NOT_FOUND","detail":"Resource corresponding to User imsi-001010000000099 not found","status":404}
+[2026-11-11 03:34:14.754] [amf_n1] [warning] Could not parse UE Authentication from Json
+[2026-11-11 03:34:14.754] [amf_n1] [info] Could not get expected response from AUSF
+[2026-11-11 03:34:14.754] [amf_n1] [error] Request Authentication Vectors failure
+[2026-11-11 03:34:14.754] [amf_app] [debug] The UE's state (IMSI 001010000000099, State 5GMM-DEREGISTERED) has been successfully updated!
+[2026-11-11 03:34:14.754] [amf_n1] [debug] Send request to SBI to trigger UE Registration State Report (SUPI imsi-001010000000099 )
+[2026-11-11 03:34:14.754] [amf_n1] [info] 5GMM state transition: COMM-PROC-INIT -> 5GMM-DEREGISTERED (event: [REGISTRATION_REJECT_SENT])
+[2026-11-11 03:34:14.754] [amf_n1] [debug] Create Registration Reject and send to UE
+[2026-11-11 03:34:14.754] [nas] [debug] Initiating RegistrationReject
+[2026-11-11 03:34:14.755] [nas_mm] [debug] Size of Registration Reject message 4
+[2026-11-11 03:34:14.755] [nas] [debug] Encoding RegistrationReject message
+[2026-11-11 03:34:14.755] [nas] [debug] Encoding NasMmPlainHeader
+[2026-11-11 03:34:14.755] [nas] [debug] Encoded NasMmPlainHeader (len 3 octets)
+[2026-11-11 03:34:14.755] [nas] [debug] Encoding 5GMM Cause
+[2026-11-11 03:34:14.755] [nas] [debug] Encoded 5GMM Cause, len (1)
+[2026-11-11 03:34:14.755] [nas] [debug] IE GPRS Timer 2 is not available
+[2026-11-11 03:34:14.755] [nas] [debug] IE GPRS Timer 2 is not available
+[2026-11-11 03:34:14.755] [nas] [debug] IE EAP Message is not available
+[2026-11-11 03:34:14.755] [nas] [debug] IE Rejected NSSAI is not available
+[2026-11-11 03:34:14.755] [nas] [debug] Encoded RegistrationReject message len (4)
+[2026-11-11 03:34:14.755] [common] [debug] [amf_n1]Registration-Reject message buffer
+7e 00 44 03 

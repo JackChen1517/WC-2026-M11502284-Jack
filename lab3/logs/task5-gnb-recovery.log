@@ -1,0 +1,28 @@
+[NR_RRC] [--] (cellID 0, UE ID 4 RNTI 1164) Create UE context: CU UE ID 4 DU UE ID 4452 (rnti: 1164, random ue id 64fc25304f000000)
+[NR_RRC] [DL] (cellID bc614e, UE ID 4 RNTI 1164) Send RRC Setup
+[NR_RRC] [UL] (cellID bc614e, UE ID 4 RNTI 1164) Received RRCSetupComplete (RRC_CONNECTED reached)
+[NR_RRC] [DL] (cellID bc614e, UE ID 4 RNTI 1164) Send DL Information Transfer [42 bytes]
+[NR_RRC] [UL] (cellID bc614e, UE ID 4 RNTI 1164) Received RRC UL Information Transfer [24 bytes]
+[NR_RRC] [DL] (cellID bc614e, UE ID 4 RNTI 1164) Send DL Information Transfer [21 bytes]
+[NR_RRC] [UL] (cellID bc614e, UE ID 4 RNTI 1164) Received RRC UL Information Transfer [60 bytes]
+[NR_RRC] [--] (cellID bc614e, UE ID 4 RNTI 1164) Selected security algorithms: ciphering 0, integrity 2
+[NR_RRC] [UL] (cellID bc614e, UE ID 4 RNTI 1164) Received Security Mode Complete
+[NR_RRC] [UL] (cellID bc614e, UE ID 4 RNTI 1164) Received UE capabilities
+[NR_RRC] [DL] (cellID bc614e, UE ID 4 RNTI 1164) Send DL Information Transfer [53 bytes]
+[NR_RRC] [UL] (cellID bc614e, UE ID 4 RNTI 1164) Received RRC UL Information Transfer [13 bytes]
+[NR_RRC] [UL] (cellID bc614e, UE ID 4 RNTI 1164) Received RRC UL Information Transfer [35 bytes]
+[NR_RRC] UE 4: received PDU Session Resource Setup Request
+[NR_RRC] Added PDU Session 10, (total nb of sessions = 1)
+[NR_RRC] Bearer Context Setup: PDU Session ID=10, incoming TEID=0x00000002, Addr=192.168.70.134
+[NR_RRC] Added DRB 1 to established list (PDU Session ID=10, total DRBs = 1)
+[NR_RRC] UE 4: added DRB 1 for PDU session ID 10
+[NR_RRC] [--] (cellID bc614e, UE ID 4 RNTI 1164) selecting CU-UP ID 3584 based on exact NSSAI match (1:0xffffff)
+[SDAP]   Default DRB for the created SDAP entity: DRB 1 
+[PDCP]   Added DRB 1 to UE ID 4
+[RLC]    Added DRB to UE 4452
+[RRC]    UE 4 trigger UE context setup request with 1 DRBs
+[PDCP]   DRB 1 re-established
+[NR_RRC] [DL] (cellID bc614e, UE ID 4 RNTI 1164) Generate RRCReconfiguration (bytes 339, xid 1)
+[NR_RRC] [UL] (cellID bc614e, UE ID 4 RNTI 1164) Received RRCReconfigurationComplete
+[NR_RRC] PDU Session Setup: ID=10, outgoing TEID=0x6ad5a6bd, Addr=192.168.70.129
+[NGAP]   Encoded PDU Session Transfer (10): TEID=0x6ad5a6bd, Addr=192.168.70.129

@@ -1,0 +1,6 @@
+[NR_MAC] 113.19 UE RA-RNTI 010f TC-RNTI 3cd0: initiating RA procedure
+[NR_RRC] Decoding CCCH: RNTI 3cd0, payload_size 6
+[NR_RRC] [--] (cellID 0, UE ID 3 RNTI 3cd0) Create UE context: CU UE ID 3 DU UE ID 15568 (rnti: 3cd0, random ue id 9ec6200aa9000000)
+[NR_RRC] [DL] (cellID bc614e, UE ID 3 RNTI 3cd0) Send RRC Setup
+[NR_RRC] [UL] (cellID bc614e, UE ID 3 RNTI 3cd0) Received RRCSetupComplete (RRC_CONNECTED reached)
+[NR_RRC] [DL] (cellID bc614e, UE ID 3 RNTI 3cd0) Send DL Information Transfer [4 bytes]

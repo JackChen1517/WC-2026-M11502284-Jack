@@ -1,0 +1,9 @@
+126342 ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf --gNBs.[0].min_rxtxtime 6 --rfsim
+126343 ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf --gNBs.[0].min_rxtxtime 6 --rfsim
+127554 ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi 001010000000001 --rfsim --rfsimulator.serveraddr 127.0.0.1
+127555 ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi 001010000000001 --rfsim --rfsimulator.serveraddr 127.0.0.1
+---
+ESTAB 434195 122904          127.0.0.1:54014          127.0.0.1:4043  users:(("nr-uesoftmodem",pid=127554,fd=91))            
+ESTAB 0      57397  [::ffff:127.0.0.1]:4043  [::ffff:127.0.0.1]:54014 users:(("nr-softmodem",pid=126342,fd=95))              
+---
+LISTEN 0      5                  *:4043             *:*    users:(("nr-softmodem",pid=126342,fd=93))                                         

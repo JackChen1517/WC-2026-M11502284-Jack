@@ -23,8 +23,16 @@ My research focuses on 5G networks and O-RAN. I am taking this course to deepen 
 
 - **LAB2 : gNB TDD Traffic Analysis**
     -  Assignment Information: [Lab2](https://hackmd.io/@Z4OmT2gcTXeLxBPXrn-2SQ/BJkbO0juze)
-    -  **Deadline : 12:00, Oct. 5**
+    -  **Deadline : 12:00, Nov. 9**
     - Goal:
 In this lab,you will compare three 5-second UDP iperf3 tests. You will learn how TDD slot allocation can affect downlink and uplink performance.
-    - - delivery: [陳祥寧 Lab2](https://github.com/JackChen1517/WC-2026-M11502284-Jack/blob/main/lab2/lab2_report.md)
-    -  [ ] Peer review : [Vote the Top3](https://docs.google.com/forms/d/e/1FAIpQLScz-Kt_9ArkXOl8sG99549xqGK7W7vAqoY4lbbc3ph03zvFaw/viewform?usp=publish-editor) (DL: 23:59, Oct.7)
+    - delivery: [陳祥寧 Lab2](https://github.com/JackChen1517/WC-2026-M11502284-Jack/blob/main/lab2/lab2_report.md)
+    -  [ ] Peer review : [Vote the Top3](https://docs.google.com/forms/d/e/1FAIpQLScz-Kt_9ArkXOl8sG99549xqGK7W7vAqoY4lbbc3ph03zvFaw/viewform?usp=publish-editor) (DL: 23:59, Nov. 11)
+
+- **LAB3 : Deploying a 5G Standalone Network Using OpenAirInterface**
+    -  Assignment Information: [Lab3](https://hackmd.io/_13mS4lLSY-pVwvtiHfPMw)
+    -  **Deadline : 12:00, Nov. 16**
+    - Goal:
+In this lab, you will deploy your own 5G Standalone (SA) network using OpenAirInterface (OAI), verify the complete connection, investigate RFsimulator communication, perform active network measurements, and troubleshoot a controlled connection failure.
+    - delivery: [陳祥寧 Lab3](https://github.com/JackChen1517/WC-2026-M11502284-Jack/blob/main/lab3/lab3_report.md)
+    -  [ ] Peer review : [Vote the Top3](https://forms.gle/Mvza68DFBzPcZXfW6) (DL: 23:59, Nov. 18)

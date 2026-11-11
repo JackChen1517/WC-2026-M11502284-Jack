@@ -1,0 +1,11 @@
+NAME         IMAGE                                    STATUS
+ims          oaisoftwarealliance/ims:latest           Up 2 hours (healthy)
+mysql        mysql:8.0                                Up 2 hours (healthy)
+oai-amf      oaisoftwarealliance/oai-amf:develop      Up 2 hours (healthy)
+oai-ausf     oaisoftwarealliance/oai-ausf:develop     Up 2 hours (healthy)
+oai-ext-dn   oaisoftwarealliance/trf-gen-cn5g:jammy   Up 2 hours (healthy)
+oai-nrf      oaisoftwarealliance/oai-nrf:develop      Up 2 hours (healthy)
+oai-smf      oaisoftwarealliance/oai-smf:develop      Up 2 hours (healthy)
+oai-udm      oaisoftwarealliance/oai-udm:develop      Up 2 hours (healthy)
+oai-udr      oaisoftwarealliance/oai-udr:develop      Up 2 hours (healthy)
+oai-upf      oaisoftwarealliance/oai-upf:develop      Up 2 hours (healthy)

@@ -36,3 +36,11 @@ In this lab,you will compare three 5-second UDP iperf3 tests. You will learn how
 In this lab, you will deploy your own 5G Standalone (SA) network using OpenAirInterface (OAI), verify the complete connection, investigate RFsimulator communication, perform active network measurements, and troubleshoot a controlled connection failure.
     - delivery: [陳祥寧 Lab3](https://github.com/JackChen1517/WC-2026-M11502284-Jack/blob/main/lab3/lab3_report.md)
     -  [ ] Peer review : [Vote the Top3](https://forms.gle/Mvza68DFBzPcZXfW6) (DL: 23:59, Nov. 18)
+
+- **LAB4 : 5G CU/DU Split Deployment and F1-C/F1-U Analysis**
+    -  Assignment Information: [Lab4](https://hackmd.io/uMmEMQrUSvay4aWaGphB7g)
+    -  **Deadline : 12:00, Nov. 23**
+    - Goal:
+Replace the monolithic gNB from Lab 3 with a split gNB-CU and gNB-DU. Capture and analyze both F1-C (F1AP over SCTP) and F1-U (GTP-U over UDP) in a single PCAP file. Verify that the UE can still establish a PDU session and reach the external data network.
+    - delivery: [陳祥寧 Lab4](https://github.com/JackChen1517/WC-2026-M11502284-Jack/blob/main/lab4/lab4_report.md)
+    -  [ ] Peer review : [Vote the Top3](https://forms.gle/dZknk7FfgeMVy5gW8) (DL: 23:59, Nov. 25)

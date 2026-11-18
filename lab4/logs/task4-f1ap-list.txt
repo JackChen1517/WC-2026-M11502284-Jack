@@ -1,0 +1,31 @@
+# tshark -r lab4-f1-complete.pcap -Y 'sctp.chunk_type in {1 2 10 11}'
+    1   0.000000    127.0.0.4 → 127.0.0.3    SCTP 82 INIT 
+    2   0.000227    127.0.0.3 → 127.0.0.4    SCTP 306 INIT_ACK 
+    3   0.000296    127.0.0.4 → 127.0.0.3    SCTP 278 COOKIE_ECHO 
+    4   0.000468    127.0.0.3 → 127.0.0.4    SCTP 50 COOKIE_ACK 
+
+# tshark -r lab4-f1-complete.pcap -Y f1ap
+    5   0.097542    127.0.0.4 → 127.0.0.3    F1AP 278 F1SetupRequest, MIB, SIB1
+    7   0.099937    127.0.0.3 → 127.0.0.4    F1AP 126 F1SetupResponse
+    9   0.100864    127.0.0.4 → 127.0.0.3    F1AP 98 GNBDUConfigurationUpdate
+   10   0.101853    127.0.0.3 → 127.0.0.4    F1AP 94 SACK (Ack=1, Arwnd=106496) , GNBDUConfigurationUpdateAcknowledge
+   64 439.780683    127.0.0.4 → 127.0.0.3    F1AP/NR RRC 262 InitialULRRCMessageTransfer, RRC Setup Request
+   65 439.787479    127.0.0.3 → 127.0.0.4    F1AP/NR RRC 258 SACK (Ack=2, Arwnd=106496) , DLRRCMessageTransfer, RRC Setup
+   66 439.835336    127.0.0.4 → 127.0.0.3    F1AP/NR RRC/NAS-5GS 150 SACK (Ack=2, Arwnd=106496) , ULRRCMessageTransfer, RRC Setup Complete, Registration request MAC=0x00000000
+   68 440.456660    127.0.0.3 → 127.0.0.4    F1AP/NR RRC/NAS-5GS 146 DLRRCMessageTransfer, DL Information Transfer, Authentication request MAC=0x00000000
+   69 440.518887    127.0.0.4 → 127.0.0.3    F1AP/NR RRC/NAS-5GS 138 SACK (Ack=3, Arwnd=106496) , ULRRCMessageTransfer, UL Information Transfer, Authentication response MAC=0x00000000
+   70 440.594068    127.0.0.3 → 127.0.0.4    F1AP/NR RRC/NAS-5GS 138 SACK (Ack=4, Arwnd=106496) , DLRRCMessageTransfer, DL Information Transfer, Security mode command MAC=0x00000000
+   71 440.618569    127.0.0.4 → 127.0.0.3    F1AP/NR RRC/NAS-5GS 174 SACK (Ack=4, Arwnd=106496) , ULRRCMessageTransfer, UL Information Transfer MAC=0x00000000
+   72 440.746320    127.0.0.3 → 127.0.0.4    F1AP/NR RRC 118 SACK (Ack=5, Arwnd=106496) , DLRRCMessageTransfer, Security Mode Command MAC=0x800ea0d5
+   73 440.768555    127.0.0.4 → 127.0.0.3    F1AP/NR RRC 118 SACK (Ack=5, Arwnd=106496) , ULRRCMessageTransfer, Security Mode Complete MAC=0x9ea4b8c5
+   74 440.775982    127.0.0.3 → 127.0.0.4    F1AP/NR RRC 122 SACK (Ack=6, Arwnd=106496) , DLRRCMessageTransfer, UE Capability Enquiry MAC=0xcf87fe5c
+   75 440.802208    127.0.0.4 → 127.0.0.3    F1AP/NR RRC 130 SACK (Ack=6, Arwnd=106496) , ULRRCMessageTransfer, UE Capability Information MAC=0x7622e338
+   76 440.803515    127.0.0.3 → 127.0.0.4    F1AP/NR RRC/NAS-5GS 170 SACK (Ack=7, Arwnd=106496) , DLRRCMessageTransfer, DL Information Transfer MAC=0xb47112b0
+   77 440.820756    127.0.0.4 → 127.0.0.3    F1AP/NR RRC/NAS-5GS 130 SACK (Ack=7, Arwnd=106496) , ULRRCMessageTransfer, UL Information Transfer MAC=0xecc121c2
+   78 440.824815    127.0.0.4 → 127.0.0.3    F1AP/NR RRC/NAS-5GS 134 ULRRCMessageTransfer, UL Information Transfer MAC=0xf47a76e9
+   80 441.135849    127.0.0.3 → 127.0.0.4    F1AP 186 UEContextSetupRequest
+   81 441.141380    127.0.0.4 → 127.0.0.3    F1AP 306 SACK (Ack=8, Arwnd=106496) , UEContextSetupResponse
+   82 441.154470    127.0.0.3 → 127.0.0.4    F1AP/NR RRC/NAS-5GS 438 SACK (Ack=10, Arwnd=106496) , DLRRCMessageTransfer, RRC Reconfiguration MAC=0x633bb49f
+   83 441.200702    127.0.0.4 → 127.0.0.3    F1AP/NR RRC 118 SACK (Ack=9, Arwnd=106496) , ULRRCMessageTransfer, RRC Reconfiguration Complete MAC=0x0ca761ed
+   84 441.201741    127.0.0.3 → 127.0.0.4    F1AP 106 SACK (Ack=11, Arwnd=106496) , UEContextModificationRequest
+   85 441.203097    127.0.0.4 → 127.0.0.3    F1AP 98 SACK (Ack=10, Arwnd=106496) , UEContextModificationResponse

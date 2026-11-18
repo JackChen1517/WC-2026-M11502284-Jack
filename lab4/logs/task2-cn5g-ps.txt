@@ -1,0 +1,11 @@
+NAME         IMAGE                                    COMMAND                  SERVICE      CREATED          STATUS                    PORTS
+ims          oaisoftwarealliance/ims:latest           "asterisk -fp"           ims          26 minutes ago   Up 26 minutes (healthy)   
+mysql        mysql:8.0                                "docker-entrypoint.s…"   mysql        26 minutes ago   Up 26 minutes (healthy)   3306/tcp, 33060/tcp
+oai-amf      oaisoftwarealliance/oai-amf:develop      "/openair-amf/bin/oa…"   oai-amf      26 minutes ago   Up 26 minutes (healthy)   80/tcp, 5342-5344/tcp, 8080/tcp, 9090/tcp, 38412/sctp
+oai-ausf     oaisoftwarealliance/oai-ausf:develop     "/openair-ausf/bin/o…"   oai-ausf     26 minutes ago   Up 26 minutes (healthy)   80/tcp, 5342-5344/tcp, 8080/tcp
+oai-ext-dn   oaisoftwarealliance/trf-gen-cn5g:jammy   "/bin/bash -c ' ip r…"   oai-ext-dn   26 minutes ago   Up 26 minutes (healthy)   
+oai-nrf      oaisoftwarealliance/oai-nrf:develop      "/openair-nrf/bin/oa…"   oai-nrf      26 minutes ago   Up 26 minutes (healthy)   80/tcp, 5342-5344/tcp, 8080/tcp
+oai-smf      oaisoftwarealliance/oai-smf:develop      "/openair-smf/bin/oa…"   oai-smf      26 minutes ago   Up 26 minutes (healthy)   80/tcp, 5342-5344/tcp, 8080/tcp, 9090/tcp, 8805/udp
+oai-udm      oaisoftwarealliance/oai-udm:develop      "/openair-udm/bin/oa…"   oai-udm      26 minutes ago   Up 26 minutes (healthy)   80/tcp, 5342-5344/tcp, 8080/tcp
+oai-udr      oaisoftwarealliance/oai-udr:develop      "/openair-udr/bin/oa…"   oai-udr      26 minutes ago   Up 26 minutes (healthy)   80/tcp, 8080/tcp
+oai-upf      oaisoftwarealliance/oai-upf:develop      "sh /openair-upf/bin…"   oai-upf      26 minutes ago   Up 26 minutes (healthy)   2152/udp, 8805/udp, 5342-5344/tcp

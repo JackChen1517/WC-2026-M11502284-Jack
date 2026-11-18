@@ -1,0 +1,21 @@
+-rw-rw-r-- 1 ubuntu ubuntu 1931 Nov 11 00:44 targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-cu.sa.f1.conf
+-rw-rw-r-- 1 ubuntu ubuntu 7491 Nov 11 00:44 targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf
+
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-cu.sa.f1.conf:20:    local_s_address     = "127.0.0.3";
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-cu.sa.f1.conf:21:    remote_s_address    = "0.0.0.0"; # multiple DUs
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-cu.sa.f1.conf:22:    local_s_portd       = 2152;
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-cu.sa.f1.conf:23:    remote_s_portd      = 2152;
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-cu.sa.f1.conf:36:    amf_ip_address = ({ ipv4 = "192.168.70.132"; });
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:21:    min_rxtxtime = 4;
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:27:      physCellId                                               = 0;
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:32:      absoluteFrequencySSB                                      = 630048;
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:35:      dl_absoluteFrequencyPointA                                = 628776;
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:41:        dl_carrierBandwidth                                     = 106;
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:160:    local_n_address     = "127.0.0.4";
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:161:    remote_n_address    = "127.0.0.3";
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:162:    local_n_portd       = 2152;
+targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb-du.sa.band78.106prb.rfsim.pci0.conf:163:    remote_n_portd      = 2152;
+
+40:        GNB_IPV4_ADDRESS_FOR_NG_AMF              = "192.168.70.129/24";
+41:        GNB_IPV4_ADDRESS_FOR_NGU                 = "192.168.70.129/24";
+42:        GNB_PORT_FOR_S1U                         = 2152; # Spec 2152

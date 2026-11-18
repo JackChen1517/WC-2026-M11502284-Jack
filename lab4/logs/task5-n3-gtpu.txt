@@ -1,0 +1,108 @@
+# tshark -r lab4-n3.pcap -q -z io,phs
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+eth                                      frames:87 bytes:12102
+  ip                                     frames:87 bytes:12102
+    udp                                  frames:87 bytes:12102
+      gtp                                frames:87 bytes:12102
+        ipv6                             frames:7 bytes:742
+          icmpv6                         frames:7 bytes:742
+        ip                               frames:80 bytes:11360
+          icmp                           frames:80 bytes:11360
+===================================================================
+# (count, outer src, outer dst, TEID)
+     40 192.168.70.129,10.0.0.2	192.168.70.134,192.168.70.135	0x00000001
+      7 192.168.70.129	192.168.70.134	0x00000001
+     40 192.168.70.134,192.168.70.135	192.168.70.129,10.0.0.2	0x401e9cc6
+
+# tshark -r lab4-n3.pcap
+    1   0.000000 fe80::d519:eb17:dc43:d4ba → ff02::2      GTP <ICMPv6> 106 Router Solicitation
+    2   4.059577 fe80::d519:eb17:dc43:d4ba → ff02::2      GTP <ICMPv6> 106 Router Solicitation
+    3  12.776425 fe80::d519:eb17:dc43:d4ba → ff02::2      GTP <ICMPv6> 106 Router Solicitation
+    4  29.920237 fe80::d519:eb17:dc43:d4ba → ff02::2      GTP <ICMPv6> 106 Router Solicitation
+    5  62.680960 fe80::d519:eb17:dc43:d4ba → ff02::2      GTP <ICMPv6> 106 Router Solicitation
+    6 130.269546 fe80::d519:eb17:dc43:d4ba → ff02::2      GTP <ICMPv6> 106 Router Solicitation
+    7 206.533110     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=1/256, ttl=64
+    8 206.545396 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=1/256, ttl=63 (request in 7)
+    9 207.523095     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=2/512, ttl=64
+   10 207.523419 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=2/512, ttl=63 (request in 9)
+   11 208.525174     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=3/768, ttl=64
+   12 208.525521 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=3/768, ttl=63 (request in 11)
+   13 209.525616     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=4/1024, ttl=64
+   14 209.526019 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=4/1024, ttl=63 (request in 13)
+   15 210.527625     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=5/1280, ttl=64
+   16 210.528203 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=5/1280, ttl=63 (request in 15)
+   17 211.530519     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=6/1536, ttl=64
+   18 211.531044 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=6/1536, ttl=63 (request in 17)
+   19 212.532262     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=7/1792, ttl=64
+   20 212.532609 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=7/1792, ttl=63 (request in 19)
+   21 213.533644     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=8/2048, ttl=64
+   22 213.534085 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=8/2048, ttl=63 (request in 21)
+   23 214.527820     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=9/2304, ttl=64
+   24 214.528400 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=9/2304, ttl=63 (request in 23)
+   25 215.533987     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0007, seq=10/2560, ttl=64
+   26 215.534479 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0007, seq=10/2560, ttl=63 (request in 25)
+   27 267.482584 fe80::d519:eb17:dc43:d4ba → ff02::2      GTP <ICMPv6> 106 Router Solicitation
+   28 310.020143     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=1/256, ttl=64
+   29 310.020800 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=1/256, ttl=63 (request in 28)
+   30 310.216884     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=2/512, ttl=64
+   31 310.217456 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=2/512, ttl=63 (request in 30)
+   32 310.423051     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=3/768, ttl=64
+   33 310.423471 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=3/768, ttl=63 (request in 32)
+   34 310.621022     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=4/1024, ttl=64
+   35 310.621388 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=4/1024, ttl=63 (request in 34)
+   36 310.817363     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=5/1280, ttl=64
+   37 310.817805 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=5/1280, ttl=63 (request in 36)
+   38 311.025695     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=6/1536, ttl=64
+   39 311.026026 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=6/1536, ttl=63 (request in 38)
+   40 311.224344     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=7/1792, ttl=64
+   41 311.224708 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=7/1792, ttl=63 (request in 40)
+   42 311.422767     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=8/2048, ttl=64
+   43 311.423066 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=8/2048, ttl=63 (request in 42)
+   44 311.615181     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=9/2304, ttl=64
+   45 311.615789 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=9/2304, ttl=63 (request in 44)
+   46 311.823634     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=10/2560, ttl=64
+   47 311.824032 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=10/2560, ttl=63 (request in 46)
+   48 312.027156     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=11/2816, ttl=64
+   49 312.027623 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=11/2816, ttl=63 (request in 48)
+   50 312.231291     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=12/3072, ttl=64
+   51 312.231612 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=12/3072, ttl=63 (request in 50)
+   52 312.424315     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=13/3328, ttl=64
+   53 312.424760 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=13/3328, ttl=63 (request in 52)
+   54 312.626002     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=14/3584, ttl=64
+   55 312.626457 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=14/3584, ttl=63 (request in 54)
+   56 312.822074     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=15/3840, ttl=64
+   57 312.822873 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=15/3840, ttl=63 (request in 56)
+   58 313.019069     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=16/4096, ttl=64
+   59 313.019768 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=16/4096, ttl=63 (request in 58)
+   60 313.226064     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=17/4352, ttl=64
+   61 313.226817 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=17/4352, ttl=63 (request in 60)
+   62 313.435622     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=18/4608, ttl=64
+   63 313.436208 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=18/4608, ttl=63 (request in 62)
+   64 313.625949     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=19/4864, ttl=64
+   65 313.626329 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=19/4864, ttl=63 (request in 64)
+   66 313.824796     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=20/5120, ttl=64
+   67 313.825305 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=20/5120, ttl=63 (request in 66)
+   68 314.030964     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=21/5376, ttl=64
+   69 314.031416 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=21/5376, ttl=63 (request in 68)
+   70 314.230006     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=22/5632, ttl=64
+   71 314.230403 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=22/5632, ttl=63 (request in 70)
+   72 314.435087     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=23/5888, ttl=64
+   73 314.435436 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=23/5888, ttl=63 (request in 72)
+   74 314.631181     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=24/6144, ttl=64
+   75 314.631613 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=24/6144, ttl=63 (request in 74)
+   76 314.834307     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=25/6400, ttl=64
+   77 314.834765 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=25/6400, ttl=63 (request in 76)
+   78 315.032003     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=26/6656, ttl=64
+   79 315.032353 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=26/6656, ttl=63 (request in 78)
+   80 315.239797     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=27/6912, ttl=64
+   81 315.240146 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=27/6912, ttl=63 (request in 80)
+   82 315.438532     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=28/7168, ttl=64
+   83 315.438963 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=28/7168, ttl=63 (request in 82)
+   84 315.638575     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=29/7424, ttl=64
+   85 315.639074 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=29/7424, ttl=63 (request in 84)
+   86 315.834037     10.0.0.2 → 192.168.70.135 GTP <ICMP> 142 Echo (ping) request  id=0x0008, seq=30/7680, ttl=64
+   87 315.834409 192.168.70.135 → 10.0.0.2     GTP <ICMP> 142 Echo (ping) reply    id=0x0008, seq=30/7680, ttl=63 (request in 86)
